@@ -2,23 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>demo-website</title>
+    <title>Skyline</title>
     <link rel="stylesheet" href="/css/main.css">
-    <meta name="keywords" content="cloud">
+    <meta name="description" content="Skyline-Cloud Platform">
   </head>
 
   <body>
 
     <header class="main-header">
       <nav class="main-navigation">
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Information</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">Price</a></li>
           <li><a href="#">Contacts</a></li>
         </ul>
-        <div class="user-login">
-          <a href="#">Login</a>
+        <div class="user-navigation">
+          <a class="user-login" href="#">Login</a>
         </div>
       </nav>
     </header>
@@ -50,16 +50,20 @@
       <section class="news">
         <h2>News</h2>
         <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-        <time datetime="06-11-2018">11 June</time>
+        <time datetime="2018-06-11">11 June</time>
         <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-        <time datetime="07-27-2018">27 July</time>
+        <time datetime="2018-07-27">27 July</time>
         <a class="button" href="#">All News</a>
       </section>
 
       <section class="gallery">
         <h2>Photos</h2>
-        <img class="gallery-photo" src="/img/photo.png" alt="gallery-photo">
-        <button class="button gallery-button" type="button" name="button">Prev</button>
+        <figure class="gallery-content">
+          <a href="#">
+            <img src="/img/photo.png" width="" height="" alt="gallery-photo">
+          </a>
+      </figure>
+      <button class="button gallery-button" type="button" name="button">Prev</button>
         <button class="button gallery-button" type="button" name="button">Next</button>
       </section>
       </div>
@@ -79,7 +83,7 @@
 
         <section class="appointment">
           <h2>Appointment</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <p class="appointment-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
           <!-- FORM -->
         </section>
       </div>
