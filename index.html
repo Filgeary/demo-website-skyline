@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Skyline</title>
     <link rel="stylesheet" href="css/main.css">
-    <meta name="description" content="Skyline-Cloud Platform">
+    <meta name="description" content="Skyline - Cloud Platform">
   </head>
 
   <body>
@@ -25,8 +25,8 @@
 
     <main class="container">
 
-      <h1 class="visually-hidden">Skyline-Cloud Platform</h1>
-      <img class="logo" src="img/logo.svg" alt="Skyline-Cloud Platform">
+      <h1 class="visually-hidden">Skyline - Cloud Platform</h1>
+      <img class="logo" src="img/logo.svg" alt="Skyline - Cloud Platform">
 
       <h2 class="visually-hidden">Features</h2>
       <section class="features">
@@ -62,8 +62,8 @@
           <a href="#">
             <img src="img/photo.png" width="" height="" alt="gallery-photo">
           </a>
-      </figure>
-      <button class="button gallery-button" type="button" name="button">Prev</button>
+        </figure>
+        <button class="button gallery-button" type="button" name="button">Prev</button>
         <button class="button gallery-button" type="button" name="button">Next</button>
       </section>
       </div>
@@ -75,8 +75,8 @@
             Address: New York City, 5th Avenue, 25 <br>
             Tel: +1 555-55-55</p>
           <p>Work Time: <br>
-            Mon-Fr: 10AM - 10PM <br>
-            Sat-Sun: 10AM - 7PM</p>
+            Mon-Fr: 10am - 10pm <br>
+            Sat-Sun: 10am - 7pm</p>
           <a class="button" href="#">How Find Us</a>
           <a class="button" href="#">Feedback</a>
         </section>
@@ -84,7 +84,29 @@
         <section class="appointment">
           <h2>Appointment</h2>
           <p class="appointment-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-          <!-- FORM -->
+          <form class="appointment-form" action="index.html" method="post">
+            <div class="appointment-item">
+                <label>Date <br>
+                  <input type="text" name="date" placeholder="07.07.18"> <br>
+                </label>
+            </div>
+            <div class="appointment-item">
+              <label>Name <br>
+                <input type="text" name="name" placeholder="Your Name"> <br>
+              </label>
+            </div>
+            <div class="appointment-item">
+              <label>Time <br>
+                <input type="text" name="time" placeholder="8pm"> <br>
+              </label>
+            </div>
+            <div class="appointment-item">
+              <label>Tel <br>
+                <input type="tel" name="tel" placeholder="+1 555-55-55">
+              </label>
+            </div>
+          </form>
+          <button class="button appointment-button" type="button" name="button">Enroll</button>
         </section>
       </div>
     </main>
