@@ -57,8 +57,8 @@ a {
 }
 
 .index-columns h2 {
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 42px;
 }
 
 .news-list {
@@ -106,7 +106,7 @@ a {
 
 .footer-contacts a {
   text-decoration: none;
-  border-bottom: dashed solid #fff;
+  border-bottom: 1px dashed #fff;
 }
 
 .footer-contacts a:hover,
