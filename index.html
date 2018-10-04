@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <meta name="description" content="Skyline - Cloud Platform">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet"> </link>
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
 
   <body>
@@ -27,7 +28,7 @@
     <main class="container">
 
       <h1 class="visually-hidden">Skyline - Cloud Platform</h1>
-      <img class="logo" src="img/logo.svg" alt="Skyline - Cloud Platform">
+      <img class="main-header-logo" src="img/index-logo.svg" alt="Skyline - Cloud Platform">
 
       <section class="features">
         <h2 class="visually-hidden">Features</h2>
@@ -47,13 +48,19 @@
         </ul>
       </section>
 
-      <div>
+      <div class="index-columns">
       <section class="news">
         <h2>News</h2>
-        <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-        <time datetime="2018-06-11">11 June</time>
-        <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-        <time datetime="2018-07-27">27 July</time>
+        <ul class="news-list">
+          <li class="news-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <time datetime="2018-06-11">11 June</time>
+          </li>
+          <li class="news-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <time datetime="2018-07-27">27 July</time>
+          </li>
+        </ul>
         <a class="button" href="#">All News</a>
       </section>
 
@@ -69,7 +76,7 @@
       </section>
       </div>
 
-      <div>
+      <div class="index-columns">
         <section class="contacts">
           <h2>Contact Information</h2>
           <p>Skyline - Cloud Platform <br>
