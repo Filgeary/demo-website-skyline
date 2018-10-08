@@ -1,11 +1,17 @@
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
 body {
   margin: 0;
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
 
   background-color: #fdfdfd;
   color: #404040;
@@ -15,34 +21,53 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 960px;
+.container,
+.main-navigation {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  width: 100%;
+  margin-bottom: 50px;
+
+  background-color: #4169E1;
 }
 
 .main-navigation {
-  font-size: 18px;
-  line-height: 22px;
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  line-height: 20px;
   color: #fff;
-
-  background-color: #4169E1;
-
-  width: 100%;
-  height: 72px;
-  margin-bottom: 60px;
 }
 
-.site-navigation,
+.main-header-logo {
+  width: 500px;
+  height: 344px;
+}
+
+.site-navigation, {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .site-navigation a,
 .user-navigation a {
   color: #fff;
-
-  display: inline-block;
-  float: left;
-  padding: 25px;
 }
 
 .site-navigation a:hover,
@@ -52,15 +77,21 @@ a {
   background-color: #4191e1;
 }
 
+.features {
+  margin-bottom: 70px;
+}
+
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
-  display: inline-block;
 }
 
 .feature-item {
   text-align: center;
-  display: inline-block;
-  float: left;
 
   width: 300px;
 }
@@ -71,8 +102,10 @@ a {
 }
 
 .index-columns {
-
-  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 30px;
 }
 
 .index-columns h2 {
@@ -80,12 +113,28 @@ a {
   line-height: 42px;
 }
 
+.news {
+  width: 380px;
+}
+
 .news-list {
   list-style: none;
 }
 
+.gallery {
+  width: 300px;
+}
+
 .gallery-content {
   background-color: #fdfdfd;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
 }
 
 .button {
@@ -117,9 +166,17 @@ a {
 }
 
 .main-footer {
+  padding: 40px 0;
+  margin-top: 50px;
+
   color: #fff;
 
   background-color: #4169E1;
+}
+
+.main-footer
+.container {
+  display: flex;
 }
 
 .footer-contacts a {
@@ -132,7 +189,13 @@ a {
   border-bottom: none;
 }
 
+.footer-contacts {
+  width: 320px;
+  margin-right: 80px;
+}
+
 .footer-social {
+  width: 145px;
   text-align: center;
 }
 
@@ -145,6 +208,9 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
+  margin-left: auto;
+
   text-align: center;
 }
 
