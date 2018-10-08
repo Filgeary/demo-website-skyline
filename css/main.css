@@ -10,7 +10,7 @@ body {
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: 400;
 
   background-color: #fdfdfd;
@@ -19,6 +19,33 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
 }
 
 .container,
@@ -38,7 +65,6 @@ a {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-
   font-size: 20px;
   line-height: 20px;
   color: #fff;
@@ -49,24 +75,29 @@ a {
   height: 344px;
 }
 
-.site-navigation, {
-  width: 620px;
+.site-navigation,
+.user-navigation {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
-.user-navigation {
-  width: 140px;
-  margin: 0;
-  padding: 0;
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+}
 
-  list-style: none;
+.user-navigation {
+  display: flex;
+  max-width: 140px;
 }
 
 .site-navigation a,
 .user-navigation a {
+  display: block;
+  padding: 25px 20px;
+
   color: #fff;
 }
 
@@ -75,6 +106,28 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #4191e1;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: '';
+
+  position: absolute;
+  top: 26px;
+  left: 24px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url(img/login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: #000;
 }
 
 .features {
@@ -169,7 +222,7 @@ a {
   padding: 40px 0;
   margin-top: 50px;
 
-  color: #fff;
+  color: #87ceeb;
 
   background-color: #4169E1;
 }
@@ -180,6 +233,7 @@ a {
 }
 
 .footer-contacts a {
+  color: #fdfdfd;
   text-decoration: none;
   border-bottom: 1px dashed #fff;
 }
@@ -219,4 +273,24 @@ a {
   color: #000;
 
   background-color: #87ceeb;
+}
+
+.bg-avatar {
+  width: 150px; height: 150px;
+  background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-facebook {
+  width: 150px; height: 150px;
+  background: url('css_sprites.png') -180px -10px;
+}
+
+.bg-linkedin {
+  width: 150px; height: 150px;
+  background: url('css_sprites.png') -10px -180px;
+}
+
+.bg-twitter {
+  width: 150px; height: 150px;
+  background: url('css_sprites.png') -180px -180px;
 }
