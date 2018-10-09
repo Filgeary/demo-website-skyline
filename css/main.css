@@ -57,9 +57,36 @@ h1, h2, h3 {
 
 .main-header {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   background-color: #4169E1;
+}
+
+.button {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 30px;
+  
+  font: inherit;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+
+  background-color: #4169E1;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #4191e1;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #ccc;
 }
 
 .main-navigation {
@@ -96,7 +123,7 @@ h1, h2, h3 {
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding: 25px 20px;
+  padding: 20px 20px;
 
   color: #fff;
 }
@@ -117,7 +144,7 @@ h1, h2, h3 {
   content: '';
 
   position: absolute;
-  top: 26px;
+  top: 20px;
   left: 24px;
 
   width: 20px;
@@ -150,8 +177,15 @@ h1, h2, h3 {
 }
 
 .feature-item h3 {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 32px;
-  line-height: 44px;
+  line-height: 42px;
+}
+
+.feature-item p {
+  margin: 0 10px;
 }
 
 .index-columns {
@@ -162,6 +196,9 @@ h1, h2, h3 {
 }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 30px;
   line-height: 42px;
 }
@@ -171,43 +208,80 @@ h1, h2, h3 {
 }
 
 .news-list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   list-style: none;
 }
 
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item p {
+  margin: 0;
+}
+
 .gallery {
-  width: 300px;
+  width: 340px;
 }
 
 .gallery-content {
-  background-color: #fdfdfd;
+  margin: 0;
+
+}
+
+.gallery-content img {
+  width: 340px;
+  height: 221px;
+}
+
+.gallery-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-button {
+  width: 45%;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .contacts {
   width: 380px;
 }
 
+.contacts p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .appointment {
-  width: 300px;
+  width: 340px;
 }
 
-.button {
-  font: inherit;
-
-  text-align: center;
-  color: #fff;
-  vertical-align: middle;
-
-  background-image: linear-gradient(to bottom, #4191e1, #4141e1);
-  border: none;
+.appointment-info {
+  margin: 0;
+  margin-bottom: 15px;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: #000;
+.appointment-item {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.appointment-item label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
 
 .appointment-item input {
+  box-sizing: border-box;
+  width: 95%;
+  padding: 5px 10px;
+
   font: inherit;
 
   background-color: transparent;
@@ -216,6 +290,11 @@ h1, h2, h3 {
 
 .appointment-item input:focus {
   border-color: #4191e1;
+}
+
+.appointment .button {
+  width: 95%;
+  margin-top: 10px;
 }
 
 .main-footer {
@@ -270,7 +349,7 @@ h1, h2, h3 {
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
-  color: #000;
+  color: #404040;
 
   background-color: #87ceeb;
 }

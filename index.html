@@ -35,45 +35,46 @@
         <ul class="features-list">
           <li class="feature-item">
             <h3>Fast</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
           </li>
           <li class="feature-item">
             <h3>Flexibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
           </li>
           <li class="feature-item">
             <h3>Reliably</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
           </li>
         </ul>
       </section>
 
       <div class="index-columns">
-      <section class="news">
-        <h2>News</h2>
-        <ul class="news-list">
-          <li class="news-item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-            <time datetime="2018-06-11">11 June</time>
-          </li>
-          <li class="news-item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-            <time datetime="2018-07-27">27 July</time>
-          </li>
-        </ul>
-        <a class="button" href="#">All News</a>
-      </section>
+        <section class="news">
+          <h2>News</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+              <time datetime="2018-06-11">11 June</time>
+            </li>
+            <li class="news-item">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+              <time datetime="2018-07-27">27 July</time>
+            </li>
+          </ul>
+          <a class="button" href="#">All News</a>
+        </section>
 
-      <section class="gallery">
-        <h2>Photos</h2>
-        <figure class="gallery-content">
-          <a href="#">
-            <img src="img/gallery-photo.png" width="300" height="180" alt="gallery-photo">
-          </a>
-        </figure>
-        <button class="button gallery-button" type="button" name="button">Prev</button>
-        <button class="button gallery-button" type="button" name="button">Next</button>
-      </section>
+        <section class="gallery">
+          <h2>Photos</h2>
+          <figure class="gallery-content">
+            <a href="#">
+              <img src="img/gallery-photo.png" width="340" height="221" alt="gallery-photo"></a>
+          </figure>
+          <div class="gallery-button-wrapper">
+            <button class="button gallery-button" type="button"   name="button">Prev</button>
+            <button class="button gallery-button" type="button"   name="button">Next</button>
+            </div>
+        </section>
       </div>
 
       <div class="index-columns">
@@ -81,6 +82,7 @@
           <h2>Contact Information</h2>
           <p>Skyline - Cloud Platform <br>
             Address: New York City, 5th Avenue, 25 <br>
+            Email: name@domain.com <br>
             Tel: +1 555-55-55</p>
           <p>Work Time: <br>
             Mon-Fr: 10am - 10pm <br>
@@ -91,30 +93,22 @@
 
         <section class="appointment">
           <h2>Appointment</h2>
-          <p class="appointment-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+          <p class="appointment-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
           <form class="appointment-form" action="index.html" method="post">
-            <div class="appointment-item">
-                <label>Date <br>
-                  <input type="text" name="date" placeholder="07-07-18"> <br>
-                </label>
-            </div>
-            <div class="appointment-item">
-              <label>Name <br>
-                <input type="text" name="name" placeholder="Your Name"> <br>
-              </label>
-            </div>
-            <div class="appointment-item">
-              <label>Time <br>
-                <input type="text" name="time" placeholder="8pm"> <br>
-              </label>
-            </div>
-            <div class="appointment-item">
-              <label>Tel <br>
-                <input type="tel" name="tel" placeholder="+1 (123) 555-55-55">
-              </label>
-            </div>
+            <p class="appointment-item">
+              <label for="appointment-name">Name</label>
+              <input id="appointment-name" type="text" name="name" placeholder="Full Name">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-email">Email</label>
+              <input id="appointment-email" type="text" name="email" placeholder="name@domain.com">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-tel">Phone</label>
+              <input id="appointment-tel" type="tel" name="tel" placeholder="+1 (123) 555-55-55">
+            </p>
+            <button class="button appointment-button" type="button" name="button">Enroll</button>
           </form>
-          <button class="button appointment-button" type="button" name="button">Enroll</button>
         </section>
       </div>
     </main>
