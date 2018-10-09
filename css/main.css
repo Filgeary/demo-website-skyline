@@ -1,10 +1,5 @@
-html,
 body {
-  min-width: 1122px;
-  min-height: 1750px;
-}
-
-body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -144,17 +139,15 @@ h1, h2, h3 {
   content: '';
 
   position: absolute;
-  top: 20px;
-  left: 24px;
+  top: 18px;
+  left: 18px;
 
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 
-  background-image: url(img/login.svg);
+  background-image: url("../img/avatar.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  background-color: #000;
 }
 
 .features {
@@ -298,12 +291,12 @@ h1, h2, h3 {
 }
 
 .main-footer {
-  padding: 40px 0;
+  padding: 30px 0;
   margin-top: 50px;
 
   color: #87ceeb;
 
-  background-color: #4169E1;
+  background-color: #3e3e42;
 }
 
 .main-footer
@@ -319,7 +312,8 @@ h1, h2, h3 {
 
 .footer-contacts a:hover,
 .footer-contacts a:focus {
-  border-bottom: none;
+  color: #4191e1;
+  border-bottom: 1px dashed #4191e1;
 }
 
 .footer-contacts {
@@ -333,12 +327,41 @@ h1, h2, h3 {
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
+.footer-social b {
+  display: block;
+  margin-bottom: 15px;
+}
+
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+
   color: #fff;
 }
+
+/* Для инлайнового SVG
+----------------------
+.social-button:hover,
+.social-button:focus {
+  background-color: #fff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: #000;
+} */
 
 .footer-copyright {
   width: 150px;
@@ -347,29 +370,22 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: #404040;
+.footer-copyright .button {
+  display: block;
+  margin-right: 0;
 
+  color: #404040;
   background-color: #87ceeb;
 }
 
-.bg-avatar {
-  width: 150px; height: 150px;
-  background: url('css_sprites.png') -10px -10px;
+.footer-copyright b {
+  display: block;
+  margin-bottom: 15px;
 }
 
-.bg-facebook {
-  width: 150px; height: 150px;
-  background: url('css_sprites.png') -180px -10px;
-}
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: #f5f5f5;
 
-.bg-linkedin {
-  width: 150px; height: 150px;
-  background: url('css_sprites.png') -10px -180px;
-}
-
-.bg-twitter {
-  width: 150px; height: 150px;
-  background: url('css_sprites.png') -180px -180px;
+  background-color: #4169E1;
 }
