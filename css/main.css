@@ -92,11 +92,6 @@ h1, h2, h3 {
   color: #fff;
 }
 
-.main-header-logo {
-  width: 500px;
-  height: 344px;
-}
-
 .site-navigation,
 .user-navigation {
   margin: 0;
@@ -148,6 +143,29 @@ h1, h2, h3 {
   background-image: url("../img/user-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.main-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.index-main-img {
+  width: 500px;
+  height: 344px;
+}
+
+.main-intro-slogan {
+  padding-top: 30px;
+
+  text-align: center;
+  font-style: italic;
+  color: #505050;
+}
+
+.index-logo {
+  background-color: #a0a0a0;
 }
 
 .features {
@@ -346,8 +364,6 @@ h1, h2, h3 {
   justify-content: center;
   width: 40px;
   height: 40px;
-
-  color: #fff;
 }
 
 .footer-copyright {
