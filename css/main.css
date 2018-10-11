@@ -145,7 +145,7 @@ h1, h2, h3 {
   width: 25px;
   height: 25px;
 
-  background-image: url("../img/avatar.svg");
+  background-image: url("../img/user-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -299,15 +299,14 @@ h1, h2, h3 {
   background-color: #3e3e42;
 }
 
-.main-footer
-.container {
+.main-footer .container {
   display: flex;
 }
 
 .footer-contacts a {
-  color: #fdfdfd;
+  color: #d1d1d1;
   text-decoration: none;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #d1d1d1;
 }
 
 .footer-contacts a:hover,
@@ -345,23 +344,11 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 
   color: #fff;
 }
-
-/* Для инлайнового SVG
-----------------------
-.social-button:hover,
-.social-button:focus {
-  background-color: #fff;
-}
-
-.social-button:hover path,
-.social-button:focus path {
-  fill: #000;
-} */
 
 .footer-copyright {
   width: 150px;
