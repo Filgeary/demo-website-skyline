@@ -388,7 +388,6 @@ h1, h2, h3 {
 
 .footer-contacts a {
   color: #d1d1d1;
-  text-decoration: none;
   border-bottom: 1px dashed #d1d1d1;
 }
 
@@ -440,6 +439,10 @@ h1, h2, h3 {
   margin-left: auto;
 
   text-align: center;
+}
+
+.footer-copyright a {
+  border-bottom: none;
 }
 
 .footer-copyright .button {
