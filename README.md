@@ -1,3 +1,7 @@
 # demo-website
 
-simple website - only HTML, CSS
+simple website - HTML, CSS, svg
+
+design from training project 
+
+images, icons from internet
