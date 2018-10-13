@@ -104,7 +104,7 @@
         <section class="appointment">
           <h2>Appointment</h2>
           <p class="appointment-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-          <form class="appointment-form" action="index.html" method="post">
+          <form class="appointment-form" action="#" method="post">
             <p class="appointment-item">
               <label for="appointment-name" class="visually-hidden">Full Name</label>
               <input id="appointment-name" type="text" name="name" placeholder="Full Name">
@@ -200,31 +200,39 @@
       </div>
     </footer>
 
-    <section class="registration">
+    <section class="modal modal-login">
       <h2>Personal Cabinet</h2>
-      <p>Type your login and password, please</p>
-      <form class="registration-form" action="#" method="post">
-        <p class="registration-item">
-          <label class="visually-hidden" for="registration-login">Login</label>
-          <input class="registration-login" type="text" name="login" placeholder="Login">
+      <p class="modal-description">Type your login and password, please</p>
+      <form class="login-form" action="#" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Login</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Login">
         </p>
         <p>
-          <label class="visually-hidden" for="registration-password">Password</label>
-          <input class="registration-password" type="text" name="password" placeholder="Password">
+          <label class="visually-hidden" for="user-password">Password</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
         </p>
-        <p>
-          <label class="visually-hidden" for="registration-remember-me">Remember Me</label>
-          <input type="checkbox" name="remember-me" id="remember-me">
-          Remember Me
+        <p class="login-help">
+          <label class="login-checkbox" for="remember">
+            <input type="checkbox" name="remember" id="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Remember Me
+          </label>
+          <a class="restore" href="#">I forget password</a>
         </p>
-        <a href="#">I forget password</a>
-        <button class="button registration-button" type="submit">Sign In</button>
+        <button class="button modal-login-button" type="submit">Sign In</button>
       </form>
+      <button class="modal-close" type="button">Close</button>
     </section>
 
-    <section class="map">
-      <img src="img/map.png" alt="Map" width="780" height="575">
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">How Find Us</h2>
+      <p>
+        <img src="img/map.png" alt="Map" width="780" height="575" alt="Company`s Office Address: New York City, 5th Avenue, 55">
+      </p>
+      <button class="modal-close">Close</button>
     </section>
 
   </body>
+  
 </html>

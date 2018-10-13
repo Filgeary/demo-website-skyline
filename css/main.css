@@ -141,7 +141,7 @@ h1, h2, h3 {
 }
 
 .login-link::before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: 18px;
