@@ -141,16 +141,17 @@
               <a class="social-button" href="#" target="_blank">
                 <span class="visually-hidden">Facebook</span> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 80 80">
-                <defs>
-                  <style>.cls-1{fill:#a5a5a5;}.cls-2{fill:#a2b1ce;}.cls-3{fill:#e8ecf3;}.cls-4{fill:#a7b5d1;}.cls-5{fill:#fff;fill-rule:evenodd;}</style>
-                </defs>
-                <title>Facebook</title>
-                <g>
-                <ellipse class="cls-1" cx="39.94" cy="39.71" rx="40.11" ry="40.09"/>
-                <path class="cls-2" d="M39.12,41.73c0-.19,0-.39-.08-.58a7.89,7.89,0,0,1,.51-3.47l.57.49c1.25,1,.2,2.38.48,3.55l-.48,0Z"/>
-                <path class="cls-3" d="M40.83,38.78c-.26.66-.52,1.31-.79,2-.35-.69-2.26-1.37,0-2.07Z"/>
-                <path class="cls-4" d="M39.17,37.67h1c.16.51.32,1,.49,1.52-.55.36,0,.68,0,1-.17.18-.35.35-.53.53a1,1,0,0,0-.5,1C38.64,40.49,39.35,39,39.17,37.67Z"/>
-                <path class="cls-5" d="M33.29,39.91V64.46a.64.64,0,0,0,.64.64h9.12a.63.63,0,0,0,.64-.64V39.51h6.62a.65.65,0,0,0,.64-.59l.63-7.52a.64.64,0,0,0-.64-.69H43.69V25.38A2.27,2.27,0,0,1,46,23.11h5.1a.64.64,0,0,0,.64-.64V15a.64.64,0,0,0-.64-.64H42.44a9.15,9.15,0,0,0-9.15,9.15v7.25H28.73a.64.64,0,0,0-.64.64v7.52a.64.64,0,0,0,.64.64h4.56Z"/></g>
+                  <defs>
+                    <style>.cls-1{fill:#a5a5a5;}.cls-2{fill:#a2b1ce;}.cls-3{fill:#e8ecf3;}.cls-4{fill:#a7b5d1;}.cls-5{fill:#fff;fill-rule:evenodd;}</style>
+                  </defs>
+                  <title>Facebook</title>
+                  <g>
+                    <ellipse class="cls-1" cx="39.94" cy="39.71" rx="40.11" ry="40.09"/>
+                    <path class="cls-2" d="M39.12,41.73c0-.19,0-.39-.08-.58a7.89,7.89,0,0,1,.51-3.47l.57.49c1.25,1,.2,2.38.48,3.55l-.48,0Z"/>
+                    <path class="cls-3" d="M40.83,38.78c-.26.66-.52,1.31-.79,2-.35-.69-2.26-1.37,0-2.07Z"/>
+                    <path class="cls-4" d="M39.17,37.67h1c.16.51.32,1,.49,1.52-.55.36,0,.68,0,1-.17.18-.35.35-.53.53a1,1,0,0,0-.5,1C38.64,40.49,39.35,39,39.17,37.67Z"/>
+                    <path class="cls-5" d="M33.29,39.91V64.46a.64.64,0,0,0,.64.64h9.12a.63.63,0,0,0,.64-.64V39.51h6.62a.65.65,0,0,0,.64-.59l.63-7.52a.64.64,0,0,0-.64-.69H43.69V25.38A2.27,2.27,0,0,1,46,23.11h5.1a.64.64,0,0,0,.64-.64V15a.64.64,0,0,0-.64-.64H42.44a9.15,9.15,0,0,0-9.15,9.15v7.25H28.73a.64.64,0,0,0-.64.64v7.52a.64.64,0,0,0,.64.64h4.56Z"/>
+                  </g>
                 </svg>
               </a>
             </li>
@@ -198,6 +199,32 @@
         </div>
       </div>
     </footer>
+
+    <section class="registration">
+      <h2>Personal Cabinet</h2>
+      <p>Type your login and password, please</p>
+      <form class="registration-form" action="#" method="post">
+        <p class="registration-item">
+          <label class="visually-hidden" for="registration-login">Login</label>
+          <input class="registration-login" type="text" name="login" placeholder="Login">
+        </p>
+        <p>
+          <label class="visually-hidden" for="registration-password">Password</label>
+          <input class="registration-password" type="text" name="password" placeholder="Password">
+        </p>
+        <p>
+          <label class="visually-hidden" for="registration-remember-me">Remember Me</label>
+          <input type="checkbox" name="remember-me" id="remember-me">
+          Remember Me
+        </p>
+        <a href="#">I forget password</a>
+        <button class="button registration-button" type="submit">Sign In</button>
+      </form>
+    </section>
+
+    <section class="map">
+      <img src="img/map.png" alt="Map" width="780" height="575">
+    </section>
 
   </body>
 </html>
