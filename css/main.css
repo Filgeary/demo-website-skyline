@@ -653,3 +653,21 @@ h1, h2, h3 {
 .modal-login-button:focus {
   background-color: #49a83e;
 }
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -430px;
+
+  display: none;
+
+  width: 850px;
+  height: 502px;
+
+  border: 7px solid #4191e1;
+}
+
+.modal-map p {
+  margin: 0;
+}

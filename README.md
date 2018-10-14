@@ -2,6 +2,6 @@
 
 simple website - HTML, CSS, svg
 
-design from training project 
+design from training project
 
 images, icons from internet
