@@ -20,7 +20,7 @@
           <li><a href="#">Contacts</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a class="login-link" href="#">Sign In</a></li>
+          <li><a class="login-link" href="login.html">Sign In</a></li>
         </ul>
       </nav>
     </header>
@@ -232,6 +232,23 @@
       </p>
       <button class="modal-close" type="button" value="close"></button>
     </section>
+
+    <script>
+      var link = document.querySelector(".login-link");
+      
+      var popup = document.querySelector(".modal-login");
+      var close = popup.querySelector(".modal-close");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      })
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      })
+    </script>
 
   </body>
 
