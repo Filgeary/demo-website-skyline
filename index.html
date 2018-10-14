@@ -97,7 +97,6 @@
           <p><strong>Work Time:</strong> <br>
             Mon-Fr: 10am - 10pm <br>
             Sat-Sun: 10am - 7pm</p>
-          <a href="#">How Find Us</a>
           <a href="#">Feedback</a>
         </section>
 
@@ -121,6 +120,12 @@
           </form>
         </section>
       </div>
+
+      <section>
+        <h2 >How Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.622554550547!2d-73.99535550546013!3d40.73463181692555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259982c5254eb%3A0x2721e522cc25cac0!2sBenjamin+N.+Cardozo+School+of+Law%2FBrookdale+Center%2C+55+5th+Ave%2C+New+York%2C+NY+10003%2C+%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sru!4v1539548291780" width="940" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+      
     </main>
 
     <footer class="main-footer">
@@ -129,7 +134,7 @@
           <h2 class="visually-hidden">Contacts</h2>
           <p>Skyline - Cloud Platform <br>
           New York City, 5th Avenue, 55 <br>
-          <a href="#">How Find Us</a> <br>
+          <a class="footer-link-map" href="map.html">How Find Us</a> <br>
           +1 (123) 555-55-55</p>
         </section>
 
@@ -227,6 +232,7 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">How Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.622554550547!2d-73.99535550546013!3d40.73463181692555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259982c5254eb%3A0x2721e522cc25cac0!2sBenjamin+N.+Cardozo+School+of+Law%2FBrookdale+Center%2C+55+5th+Ave%2C+New+York%2C+NY+10003%2C+%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sru!4v1539548291780" width="850" height="502" frameborder="0" style="border:0" allowfullscreen></iframe>
       <p>
         <img src="img/map.png" width="850" height="502" alt="Company`s Office Address: New York City, 5th Avenue, 55">
       </p>
@@ -238,18 +244,87 @@
       
       var popup = document.querySelector(".modal-login");
       var close = popup.querySelector(".modal-close");
+      
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      var password = popup.querySelector("[name=password]");
+
+      var isStorageSupport = true;
+      var storage = "";
+
+      try {
+        storage = localStorage.getItem("login");
+      } catch (err) {
+        isStorageSupport = false;
+      }
 
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
+
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
       });
 
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!login.value || !password.value) {
+          evt.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else {
+          if (isStorageSupport) {
+            localStorage.setItem("login", login.value);
+          }
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+
+      var mapLink = document.querySelector(".footer-link-map");
+
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal-close");
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (mapPopup.classList.contains("modal-show")) {
+            mapPopup.classList.remove("modal-show");
+          }
+        }
       });
     </script>
 
   </body>
 
 </html>
+

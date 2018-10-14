@@ -467,6 +467,46 @@ h1, h2, h3 {
 
 /* Popup */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
 
@@ -480,6 +520,12 @@ h1, h2, h3 {
 
 .modal-show {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-login {
@@ -496,7 +542,7 @@ h1, h2, h3 {
   position: absolute;
 
   top: 0;
-  right: -50px;
+  right: -45px;
 
   width: 35px;
   height: 35px;
@@ -515,10 +561,10 @@ h1, h2, h3 {
   top: 15px;
   left: 3px;
 
-  width: 30px;
-  height: 3px;
+  width: 40px;
+  height: 4px;
 
-  background-color: #1f49c7;
+  background-color: #4191e1;
 }
 
 .modal-close::before {
@@ -671,5 +717,17 @@ h1, h2, h3 {
 }
 
 .modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
   margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
