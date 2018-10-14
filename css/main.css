@@ -470,6 +470,8 @@ h1, h2, h3 {
 .modal {
   position: fixed;
 
+  display: none;
+
   color: #eee;
 
   background-color: #4169E1;
@@ -484,8 +486,6 @@ h1, h2, h3 {
   top: 200px;
   left: 50%;
   margin-left: -250px;
-
-  display: none;
 
   width: 350px;
   height: 385px;
@@ -663,8 +663,6 @@ h1, h2, h3 {
   left: 50%;
   margin-top: -280px;
   margin-left: -430px;
-
-  display: none;
 
   width: 850px;
   height: 502px;
