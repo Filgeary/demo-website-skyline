@@ -1,6 +1,6 @@
 # demo-website
 
-simple website - HTML, CSS, svg
+simple website - HTML, CSS, JS(minimal), svg
 
 design from training project
 
