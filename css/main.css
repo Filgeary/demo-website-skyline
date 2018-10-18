@@ -70,7 +70,7 @@ h1, h2, h3 {
   display: inline-block;
   margin-right: 20px;
   padding: 10px 30px;
-  
+
   font: inherit;
   text-align: center;
   color: #fff;
@@ -223,7 +223,7 @@ h1, h2, h3 {
 
 .feature-item h3 {
   position: relative;
-  
+
   margin: 0;
   margin-bottom: 30px;
 
@@ -555,7 +555,7 @@ h1, h2, h3 {
   width: 35px;
   height: 35px;
 
-  background-color: transparent;
+  background-color: #404040;
   border: 0;
 
   cursor: pointer;
@@ -564,15 +564,15 @@ h1, h2, h3 {
 .modal-close::before,
 .modal-close::after {
   content: "";
-  
+
   position: absolute;
   top: 15px;
-  left: 3px;
+  left: -2px;
 
   width: 40px;
   height: 4px;
 
-  background-color: #4191e1;
+  background-color: #fff;
 }
 
 .modal-close::before {
@@ -630,7 +630,7 @@ h1, h2, h3 {
   justify-content: space-between;
 
   margin: 15px 0;
-  
+
 }
 
 .login-checkbox {
