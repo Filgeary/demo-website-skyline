@@ -216,9 +216,12 @@ h1, h2, h3 {
 }
 
 .feature-item {
+  width: 260px;
+  padding: 25px 15px;
+
   text-align: center;
 
-  width: 300px;
+  background-color: #eee;
 }
 
 .feature-item h3 {
@@ -236,7 +239,7 @@ h1, h2, h3 {
 
   position: absolute;
   top: 50px;
-  left: 100px;
+  left: 80px;
 
   width: 100px;
   height: 5px;
@@ -245,7 +248,7 @@ h1, h2, h3 {
 }
 
 .feature-item p {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .promo {
