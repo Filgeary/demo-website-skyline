@@ -240,11 +240,37 @@ h1, h2, h3 {
 
   width: 100px;
   height: 5px;
+
   background-color: #4169E1;
 }
 
 .feature-item p {
   margin: 0 10px;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  margin-bottom: 60px;
+
+  color: #87ceeb;
+
+  background-color: #374a62;
+}
+
+.promo svg {
+  width: 125px;
+  height: 125px;
+  margin-top: 20px;
+}
+
+.promo p {
+  width: 600px;
+
+  font-size: 22px;
+  line-height: 34px;
+  font-style: italic;
 }
 
 .index-columns {
