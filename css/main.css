@@ -350,6 +350,11 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
+.price table {
+  display: table;
+  border-collapse: collapse;
+}
+
 .contacts {
   width: 380px;
 }
