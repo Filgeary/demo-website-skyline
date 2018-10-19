@@ -350,9 +350,70 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
+.price {
+  padding: 40px 80px;
+  margin-bottom: 60px;
+
+  background-color: #eee;
+}
+
 .price table {
   display: table;
   border-collapse: collapse;
+  width: 100%;
+}
+
+.price caption {
+  margin-bottom: 40px;
+
+  font-size: 30px;
+  text-align: center;
+}
+
+.price th {
+  padding: 20px;
+
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #4169E1;
+  border-right: 1px dashed #fff;
+}
+
+.price th:first-child {
+  background-color: inherit;
+  border-right: none;
+}
+
+.price tr {
+  border-bottom: 1px dashed #4191E1;
+}
+
+.price td {
+  padding: 10px 20px;
+
+  text-align: center;
+}
+
+.price td:first-child {
+  background-color: #fff;
+}
+
+.price tr:nth-last-child(2),
+.price tr:last-child {
+  border-bottom: none;
+}
+
+.price-row td {
+  padding: 20px;
+
+  font-size: 26px;
+  color: #87ceeb;
+  background-color: #405776;
+}
+
+.price-row td:first-child {
+  background-color: inherit;
 }
 
 .contacts {
