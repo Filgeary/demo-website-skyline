@@ -351,10 +351,8 @@ h1, h2, h3 {
 }
 
 .price {
-  padding: 40px 80px;
+  padding: 40px 0;
   margin-bottom: 60px;
-
-  background-color: #eee;
 }
 
 .price table {
@@ -364,10 +362,15 @@ h1, h2, h3 {
 }
 
 .price caption {
+  width: 30%;
+  padding: 20px;
+  margin: auto;
   margin-bottom: 40px;
 
   font-size: 30px;
   text-align: center;
+  color: #405776;
+  background-color: #eee;
 }
 
 .price th {
@@ -385,6 +388,10 @@ h1, h2, h3 {
   border-right: none;
 }
 
+.price th:last-child {
+  border-right: none;
+}
+
 .price tr {
   border-bottom: 1px dashed #4191E1;
 }
@@ -393,10 +400,11 @@ h1, h2, h3 {
   padding: 10px 20px;
 
   text-align: center;
+  background-color: #eee;
 }
 
 .price td:first-child {
-  background-color: #fff;
+  background-color: #fdfdfd;
 }
 
 .price tr:nth-last-child(2),
@@ -407,13 +415,19 @@ h1, h2, h3 {
 .price-row td {
   padding: 20px;
 
-  font-size: 26px;
+  font-size: 30px;
   color: #87ceeb;
   background-color: #405776;
+  border-right: 1px dashed #87ceeb;
 }
 
 .price-row td:first-child {
   background-color: inherit;
+  border-right: none;
+}
+
+.price-row td:last-child {
+  border-right: none;
 }
 
 .contacts {
