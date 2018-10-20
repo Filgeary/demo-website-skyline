@@ -430,6 +430,34 @@ h1, h2, h3 {
   border-right: none;
 }
 
+.price-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-price {
+  padding: 15px 70px;
+  margin-top: 30px;
+
+  font-size: 20px;
+}
+
+.btn-price:hover,
+.btn-price:focus {
+  border-bottom: none;
+}
+
+.btn-find-more {
+  color: #4169E1;
+
+  background-color: #e6e6e6;
+}
+
+.btn-find-more:hover,
+.btn-find-more:focus {
+  background-color: #87ceeb;
+}
+
 .contacts {
   width: 380px;
 }
