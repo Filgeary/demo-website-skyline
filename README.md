@@ -1,7 +1,5 @@
 # demo-website
 
-simple website - HTML, CSS, JS(minimal), svg
-
-design from training project
+training project - HTML, CSS, JavaScript, svg, popup
 
 images, icons from internet
