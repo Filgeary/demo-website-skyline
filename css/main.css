@@ -184,7 +184,8 @@ h1, h2, h3 {
 }
 
 .main-intro-slogan h2 {
-  font-size: 23px;
+  font-size: 24px;
+  color: #405776;
 }
 
 .button-registration {
@@ -230,7 +231,7 @@ h1, h2, h3 {
   margin: 0;
   margin-bottom: 30px;
 
-  font-size: 32px;
+  font-size: 30px;
   line-height: 42px;
 }
 
@@ -242,7 +243,7 @@ h1, h2, h3 {
   left: 80px;
 
   width: 100px;
-  height: 5px;
+  height: 4px;
 
   background-color: #4169E1;
 }
@@ -362,15 +363,26 @@ h1, h2, h3 {
 }
 
 .price caption {
-  width: 30%;
+  position: relative;
   padding: 20px;
-  margin: auto;
   margin-bottom: 40px;
 
-  font-size: 30px;
-  text-align: center;
+  font-size: 38px;
+  text-align: left;
   color: #405776;
-  background-color: #eee;
+}
+
+.price caption::after {
+  content: "";
+
+  position: absolute;
+  top: 65px;
+  left: 20px;
+
+  width: 400px;
+  height: 4px;
+
+  background-color: #405776;
 }
 
 .price th {
@@ -379,27 +391,31 @@ h1, h2, h3 {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
-  background-color: #4169E1;
-  border-right: 1px dashed #fff;
 }
 
-.price th:first-child {
-  background-color: inherit;
-  border-right: none;
+.plan-row .thead-plan-free {
+  background-color: #4191e1;
 }
 
-.price th:last-child {
-  border-right: none;
+.plan-row .thead-plan-basic {
+  background-color: #4169e1;
+}
+
+.plan-row .thead-plan-pro {
+  color: #87ceeb;
+
+  background-color: #405776;
 }
 
 .price tr {
-  border-bottom: 1px dashed #4191E1;
+  border-bottom: 1px dashed #4191e1;
 }
 
 .price td {
   padding: 10px 20px;
 
   text-align: center;
+
   background-color: #eee;
 }
 
@@ -407,7 +423,6 @@ h1, h2, h3 {
   background-color: #fdfdfd;
 }
 
-.price tr:nth-last-child(2),
 .price tr:last-child {
   border-bottom: none;
 }
@@ -416,18 +431,21 @@ h1, h2, h3 {
   padding: 20px;
 
   font-size: 30px;
+  color: #fff;
+}
+
+.price-row .tfoot-plan-free {
+  background-color: #4191e1;
+}
+
+.price-row .tfoot-plan-basic {
+  background-color: #4169e1;
+}
+
+.price-row .tfoot-plan-pro {
   color: #87ceeb;
+  
   background-color: #405776;
-  border-right: 1px dashed #87ceeb;
-}
-
-.price-row td:first-child {
-  background-color: inherit;
-  border-right: none;
-}
-
-.price-row td:last-child {
-  border-right: none;
 }
 
 .price-btn-wrapper {
@@ -437,7 +455,7 @@ h1, h2, h3 {
 
 .btn-price {
   padding: 15px 70px;
-  margin-top: 30px;
+  margin-top: 50px;
 
   font-size: 20px;
 }
@@ -448,14 +466,15 @@ h1, h2, h3 {
 }
 
 .btn-find-more {
-  color: #4169E1;
+  color: #4169e1;
 
   background-color: #e6e6e6;
 }
 
 .btn-find-more:hover,
 .btn-find-more:focus {
-  background-color: #87ceeb;
+  color: #fff;
+  background-color: #4191e1;
 }
 
 .contacts {
