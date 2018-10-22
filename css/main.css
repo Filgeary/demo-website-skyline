@@ -80,10 +80,24 @@ h1, h2, h3 {
   border: none;
 }
 
+.button-select {
+  background-color: inherit;
+  border: none;
+
+  cursor: pointer;
+}
+
 .button:hover,
 .button:focus,
 .button:active {
   background-color: #4191e1;
+}
+
+.button-select:hover,
+.button-select:focus,
+.button-select:active {
+  background-color: #dfdfdf;
+
 }
 
 .button.disabled,
@@ -367,7 +381,7 @@ h1, h2, h3 {
   padding: 20px;
   margin-bottom: 40px;
 
-  font-size: 38px;
+  font-size: 34px;
   text-align: left;
   color: #405776;
 }
@@ -477,6 +491,86 @@ h1, h2, h3 {
   background-color: #4191e1;
 }
 
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 10px;
+  margin-bottom: 60px;
+
+  background-color: #eee;
+  border-left: 7px solid #405776;
+}
+
+.button-select-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.button-select-icon:hover,
+.button-select-icon:focus,
+.button-select-icon:active {
+  fill: #4191e1;
+}
+
+.reviews-icon-user-avatar {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.blockquote-wrapper {
+  position: relative;
+  padding: 0 45px;
+}
+
+.reviews-icon-blockquote-start,
+.reviews-icon-blockquote-end {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+}
+
+.reviews-icon-blockquote-start {
+  top: 0;
+  left: 0;
+}
+
+.reviews-icon-blockquote-end {
+  top: 0;
+  right: 0;
+}
+
+.index-blockquote {
+  margin: 0;
+  padding: 0;
+  width: 570px;
+
+  font-size: 20px;
+  line-height: 32px;
+  font-style: italic;
+}
+
+.blockquote-link-author-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.blockquote-link {
+  font-size: 22px;
+}
+
+.blockquote-author {
+  margin: 0;
+  
+  font-weight: 700;
+}
+
+.blockquote-author-workplace {
+  font-style: italic;
+}
+
 .contacts {
   width: 380px;
 }
@@ -517,7 +611,7 @@ h1, h2, h3 {
 
 .appointment-item input {
   box-sizing: border-box;
-  width: 95%;
+  width: 100%;
   padding: 5px 10px;
 
   font: inherit;
@@ -531,7 +625,7 @@ h1, h2, h3 {
 }
 
 .appointment .button {
-  width: 95%;
+  width: 100%;
   margin-top: 5px;
 
   cursor: pointer;
