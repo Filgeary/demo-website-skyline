@@ -1,5 +1,7 @@
 # demo-website
 
-training project - HTML, CSS, JavaScript, svg, popup
+training project - Fixed Width website
+
+HTML, CSS, JavaScript, Flexbox, Git, GitHub, SVG, popup
 
 images, icons from internet
