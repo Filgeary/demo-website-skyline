@@ -30,6 +30,17 @@ img {
   height: auto;
 }
 
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+::before,
+::after {
+  content: "";
+
+  position: absolute;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -48,24 +59,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-h1, h2, h3 {
-  font-weight: 400;
-}
-
-.container,
-.main-navigation {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.main-header {
-  width: 100%;
-  margin-bottom: 40px;
-
-  background-color: #4169E1;
-}
-
 .button {
   display: inline-block;
   margin-right: 20px;
@@ -78,6 +71,8 @@ h1, h2, h3 {
 
   background-color: #4169E1;
   border: none;
+
+  cursor: pointer;
 }
 
 .button-select {
@@ -105,6 +100,20 @@ h1, h2, h3 {
   cursor: default;
   opacity: 0.5;
   background-color: #ccc;
+}
+
+.container,
+.main-navigation {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  width: 100%;
+  margin-bottom: 40px;
+
+  background-color: #4169E1;
 }
 
 .main-navigation {
@@ -155,9 +164,6 @@ h1, h2, h3 {
 }
 
 .login-link::before {
-  content: "";
-
-  position: absolute;
   top: 18px;
   left: 18px;
 
@@ -206,8 +212,6 @@ h1, h2, h3 {
   margin-left: 25px;
 
   background-color: #4eb543;
-
-  cursor: pointer;
 }
 
 .button-registration:hover,
@@ -250,9 +254,6 @@ h1, h2, h3 {
 }
 
 .feature-item h3::after {
-  content: "";
-
-  position: absolute;
   top: 50px;
   left: 80px;
 
@@ -361,8 +362,6 @@ h1, h2, h3 {
   width: 45%;
   margin: 0;
   margin-top: 20px;
-
-  cursor: pointer;
 }
 
 .price {
@@ -387,9 +386,6 @@ h1, h2, h3 {
 }
 
 .price caption::after {
-  content: "";
-
-  position: absolute;
   top: 65px;
   left: 20px;
 
@@ -491,14 +487,31 @@ h1, h2, h3 {
   background-color: #4191e1;
 }
 
-.reviews {
+.reviews h2 {
+  position: relative;
+  margin-bottom: 50px;
+
+  font-size: 30px;
+  color: #405776;
+}
+
+.reviews h2::after {
+  top: 40px;
+  left: 0;
+
+  width: 400px;
+  height: 4px;
+
+  background-color: #405776;
+}
+
+.reviews-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 40px 10px;
   margin-bottom: 60px;
 
   background-color: #eee;
-  border-left: 7px solid #405776;
 }
 
 .button-select-icon {
@@ -627,8 +640,6 @@ h1, h2, h3 {
 .appointment .button {
   width: 100%;
   margin-top: 5px;
-
-  cursor: pointer;
 }
 
 .main-footer {
@@ -813,9 +824,6 @@ h1, h2, h3 {
 
 .modal-close::before,
 .modal-close::after {
-  content: "";
-
-  position: absolute;
   top: 15px;
   left: -2px;
 
@@ -915,9 +923,6 @@ h1, h2, h3 {
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-  content: "";
-
-  position: absolute;
   top: 8px;
   left: 2px;
 
@@ -953,8 +958,6 @@ h1, h2, h3 {
   margin-top: 20px;
 
   background-color: #4eb543;
-
-  cursor: pointer;
 }
 
 .modal-login-button:hover,
