@@ -15,7 +15,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="/index.html">
-        <img src="/img/index-logo.svg" width="170" height="44" alt="Skyline">
+        <img class="inner-page-logo" src="/img/index-logo.svg" width="170" height="44" alt="Skyline">
       </a>
       <ul class="site-navigation">
         <li><a href="#features">Features</a></li>
@@ -38,162 +38,173 @@
       <li class="breadcrumbs-current">Marketplace</li>
     </ul>
 
-    <section class="filters">
-      <h2 class="visually-hidden">Filter of Tools</h2>
+    <div class="filters-catalog-wrapper">
+      <section class="filters">
+        <h2 class="visually-hidden">Filter of Tools</h2>
 
-      <form class="filter" method="GET" action="#">
-        <fieldset>
-          <legend>Technologies</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="html" id="filter-html" checked>
-              <label for="filter-html">HTML</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="css" id="filter-css" checked>
-              <label for="filter-css">CSS</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="javascript" id="filter-javascript" checked>
-              <label for="filter-javascript">JavaScript</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sass" id="filter-sass" checked>
-              <label for="filter-sass">SASS</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bootstrap" id="filter-bootstrap" checked>
-              <label for="filter-bootstrap">Bootstrap</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gulp" id="filter-gulp" checked>
-              <label for="filter-gulp">Gulp</label>
-            </li>
-          </ul>
-        </fieldset>
+        <form class="filter" method="GET" action="#">
+          <fieldset>
+            <legend>Technologies</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="html" id="filter-html"
+                  checked>
+                <label for="filter-html">HTML</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="css" id="filter-css"
+                  checked>
+                <label for="filter-css">CSS</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="javascript" id="filter-javascript"
+                  checked>
+                <label for="filter-javascript">JavaScript</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sass" id="filter-sass"
+                  checked>
+                <label for="filter-sass">SASS</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bootstrap" id="filter-bootstrap"
+                  checked>
+                <label for="filter-bootstrap">Bootstrap</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gulp" id="filter-gulp"
+                  checked>
+                <label for="filter-gulp">Gulp</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend>Platforms</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="web" id="filter-web">
-              <label for="filter-web">Web</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="mobile" id="filter-mobile">
-              <label for="filter-mobile">Mobile</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="desktop" id="filter-desktop">
-              <label for="filter-desktop">Desktop</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button filter-button" type="submit">Find</button>
-      </form>
+          <fieldset>
+            <legend>Platforms</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="web"
+                  id="filter-web">
+                <label for="filter-web">Web</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="mobile"
+                  id="filter-mobile">
+                <label for="filter-mobile">Mobile</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="desktop"
+                  id="filter-desktop">
+                <label for="filter-desktop">Desktop</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-button" type="submit">Find</button>
+        </form>
 
-    </section>
+      </section>
 
-    <section class="catalog">
+      <section class="catalog">
 
-      <h2 class="visually-hidden">Solutions</h2>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <h3>
-              <span class="catalog-item-title">HTML</span>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="/img/market-item-1.png" width="220" height="165" alt="HTML">
+        <h2 class="visually-hidden">Solutions</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item-title">HTML</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="/img/market-item-1.png" width="220" height="165" alt="HTML">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <span>5$</span>
+              <a class="button" href="#">BUY</a>
             </p>
-          </a>
-          <p class="catalog-item-price">
-            <span>5$</span>
-            <a class="button" href="#">BUY</a>
-          </p>
-        </li>
+          </li>
 
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <h3>
-              <span class="catalog-item-title">CSS</span>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="/img/market-item-2.png" width="220" height="165" alt="CSS">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item-title">CSS</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="/img/market-item-2.png" width="220" height="165" alt="CSS">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <span>5$</span>
+              <a class="button" href="#">BUY</a>
             </p>
-          </a>
-          <p class="catalog-item-price">
-            <span>5$</span>
-            <a class="button" href="#">BUY</a>
-          </p>
-        </li>
+          </li>
 
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <h3>
-              <span class="catalog-item-title">JavaScript</span>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="/img/market-item-3.png" width="220" height="165" alt="JavaScript">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item-title">JavaScript</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="/img/market-item-3.png" width="220" height="165" alt="JavaScript">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <span>5$</span>
+              <a class="button" href="#">BUY</a>
             </p>
-          </a>
-          <p class="catalog-item-price">
-            <span>5$</span>
-            <a class="button" href="#">BUY</a>
-          </p>
-        </li>
+          </li>
 
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <h3>
-              <span class="catalog-item-title">SASS</span>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="/img/market-item-4.png" width="220" height="165" alt="SASS">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item-title">SASS</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="/img/market-item-4.png" width="220" height="165" alt="SASS">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <span>10$</span>
+              <a class="button" href="#">BUY</a>
             </p>
-          </a>
-          <p class="catalog-item-price">
-            <span>10$</span>
-            <a class="button" href="#">BUY</a>
-          </p>
-        </li>
+          </li>
 
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <h3>
-              <span class="catalog-item-title">Bootstrap</span>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="/img/market-item-5.png" width="220" height="165" alt="Bootstrap">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item-title">Bootstrap</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="/img/market-item-5.png" width="220" height="165" alt="Bootstrap">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <span>10$</span>
+              <a class="button" href="#">BUY</a>
             </p>
-          </a>
-          <p class="catalog-item-price">
-            <span>10$</span>
-            <a class="button" href="#">BUY</a>
-          </p>
-        </li>
+          </li>
 
-        <li class="catalog-item">
-          <a href="catalog-item.html">
-            <h3>
-              <span class="catalog-item-title">Gulp</span>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="/img/market-item-6.png" width="220" height="165" alt="Gulp">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item-title">Gulp</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="/img/market-item-6.png" width="220" height="165" alt="Gulp">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <span>15$</span>
+              <a class="button" href="#">BUY</a>
             </p>
-          </a>
-          <p class="catalog-item-price">
-            <span>15$</span>
-            <a class="button" href="#">BUY</a>
-          </p>
-        </li>
+          </li>
+    </div>
 
-        <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item pagination-item-current"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-        </ul>
+    <ul class="pagination-list">
+      <li class="pagination-item"><a href="#">1</a></li>
+      <li class="pagination-item pagination-item-current"><a>2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item"><a href="#">4</a></li>
+    </ul>
 
     </section>
 
