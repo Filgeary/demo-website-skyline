@@ -186,17 +186,26 @@ input[type="radio"].visually-hidden {
 
 .inner-page-logo {
   margin-top: 8px;
+  width: 170px;
+  height: 44px;
 }
 
 .site-navigation-current {
-  background-color: #4191e1;
+  position: relative;
+}
+
+.site-navigation-current::after {
+  top: 53px;
+  left: 25px;
+  width: 100px;
+  height: 7px;
+
+  background-color: #87ceeb;
 }
 
 .page-title {
-  margin-top: 50px;
-
   font-size: 34px;
-  line-height: 46px;
+  line-height: 26px;
 }
 
 .breadcrumbs {
@@ -306,13 +315,10 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
-  display: flex;
-  flex-direction: column;
   margin-right: 20px;
   margin-bottom: 20px;
   width: 220px;
 
-  background-color: #eee;
 }
 
 .catalog-item:hover {
@@ -323,22 +329,27 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.catalog-item h3 {
-  font-size: 24px;
-  line-height: 34px;
-}
-
 .catalog-item a {
+  display: flex;
+  flex-direction: column;
+
   border-bottom: none;
 }
 
-.catalog-item-title {
-  display: flex;
+.catalog-item h3 {
   order: 2;
+  margin: 10px 0;
+
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
 }
 
 .catalog-item-image {
   margin: 0;
+  padding: 25px 0;
+  background-color: #eee;
+
 }
 
 .catalog-item img {
