@@ -1,3 +1,6 @@
+/* Global styles
+--------------------------------------------------------------------- */
+
 body {
   min-width: 960px;
   margin: 0;
@@ -109,6 +112,9 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 
+/* Header
+--------------------------------------------------------------------- */
+
 .main-header {
   width: 100%;
   margin-bottom: 40px;
@@ -175,6 +181,9 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+/* Main Intro
+--------------------------------------------------------------------- */
+
 .main-intro {
   display: flex;
   justify-content: space-between;
@@ -220,6 +229,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #49a83e;
 }
+
+/* Features
+--------------------------------------------------------------------- */
 
 .features {
   margin-bottom: 70px;
@@ -267,6 +279,9 @@ input[type="radio"].visually-hidden {
   margin: 0 15px;
 }
 
+/* Promo
+--------------------------------------------------------------------- */
+
 .promo {
   display: flex;
   justify-content: space-between;
@@ -292,6 +307,9 @@ input[type="radio"].visually-hidden {
   font-style: italic;
 }
 
+/* Index Columns
+--------------------------------------------------------------------- */
+
 .index-columns {
   display: flex;
   justify-content: space-between;
@@ -308,6 +326,9 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 42px;
 }
+
+/* News
+--------------------------------------------------------------------- */
 
 .news {
   width: 380px;
@@ -336,6 +357,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+/* Gallery
+--------------------------------------------------------------------- */
+
 .gallery {
   width: 340px;
 }
@@ -363,6 +387,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 20px;
 }
+
+/* Price
+--------------------------------------------------------------------- */
 
 .price {
   padding: 20px 0;
@@ -487,6 +514,9 @@ input[type="radio"].visually-hidden {
   background-color: #4191e1;
 }
 
+/* Reviews
+--------------------------------------------------------------------- */
+
 .reviews h2 {
   position: relative;
   margin-bottom: 50px;
@@ -584,6 +614,9 @@ input[type="radio"].visually-hidden {
   font-style: italic;
 }
 
+/* Contacts
+--------------------------------------------------------------------- */
+
 .contacts {
   width: 380px;
 }
@@ -599,6 +632,9 @@ input[type="radio"].visually-hidden {
   font-size: 22px;
   margin-right: 50px;
 }
+
+/* Appointment
+--------------------------------------------------------------------- */
 
 .appointment {
   width: 340px;
@@ -641,6 +677,9 @@ input[type="radio"].visually-hidden {
   width: 100%;
   margin-top: 5px;
 }
+
+/* Main Footer
+--------------------------------------------------------------------- */
 
 .main-footer {
   padding: 30px 0;
@@ -734,7 +773,8 @@ input[type="radio"].visually-hidden {
   background-color: #4169E1;
 }
 
-/* Popup */
+/* Popups
+--------------------------------------------------------------------- */
 
 @keyframes bounce {
   0% {
@@ -775,6 +815,9 @@ input[type="radio"].visually-hidden {
     transform: translateX(10px);
   }
 }
+
+/* Modal
+--------------------------------------------------------------------- */
 
 .modal {
   position: fixed;
@@ -964,6 +1007,9 @@ input[type="radio"].visually-hidden {
 .modal-login-button:focus {
   background-color: #49a83e;
 }
+
+/* Modal Map
+--------------------------------------------------------------------- */
 
 .modal-map {
   top: 50%;
