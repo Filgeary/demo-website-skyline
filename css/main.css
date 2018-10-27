@@ -512,6 +512,34 @@ input[type="radio"].visually-hidden {
   background-color: #4191e1;
 }
 
+/* Page Contacts
+--------------------------------------------------------------------- */
+
+.page-contacts .site-navigation-current::after {
+  left: 22px;
+}
+
+.page-contacts .contacts-map-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iframe-img-wrapper {
+  position: relative;
+}
+
+.iframe-img-wrapper iframe {
+  position: relative;
+  z-index: 2;
+}
+.iframe-img-wrapper p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
 
 /* Main Intro
 --------------------------------------------------------------------- */
