@@ -188,6 +188,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-current {
   position: relative;
+  border-bottom: 5px solid #000;
 }
 
 .site-navigation-current::after {
@@ -195,11 +196,16 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 53px;
-  left: 25px;
-  width: 100px;
+  left: 13px;
+  width: 75px;
   height: 7px;
+  text-align: center;
 
   background-color: #87ceeb;
+}
+
+.page-marketplace .site-navigation-current::after {
+  left: 37px;
 }
 
 .page-title {
