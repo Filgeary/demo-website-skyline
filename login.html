@@ -14,12 +14,13 @@
   
   <header class="main-header">
     <nav class="main-navigation">
+        <a class="main-header-logo" href="/index.html">
+          <img class="inner-page-logo" src="/img/index-logo.svg" width="170" height="44" alt="Skyline">
+        </a>  
       <ul class="site-navigation">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#price">Pricing</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
         <li><a href="/marketplace.html">Marketplace</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="/contacts.html">Contacts</a></li>
       </ul>
       <ul class="user-navigation">
         <li><a class="login-link" href="login.html">Sign In</a></li>
@@ -29,8 +30,30 @@
 
   <main class="container">
 
-
-
+    <section class="modal modal-login page-modal-no-js">
+      <h2>Personal Cabinet</h2>
+      <p class="modal-description">Type your login and password, please</p>
+      <form class="login-form" action="#" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Login</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Login">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Password</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
+        </p>
+        <p class="login-help">
+          <label class="login-checkbox" for="remember">
+            <input class="visually-hidden" type="checkbox" name="remember" id="remember">
+            <span class="checkbox-indicator"></span>
+            Remember Me
+          </label>
+          <a class="restore" href="#">I forgot password</a>
+        </p>
+        <button class="button modal-login-button" type="submit">Sign In</button>
+      </form>
+    </section>
+  
   </main>
 
   <footer class="main-footer">
