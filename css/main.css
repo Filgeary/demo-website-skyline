@@ -37,13 +37,6 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
-::before,
-::after {
-  content: "";
-
-  position: absolute;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -170,6 +163,9 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link::before {
+  content: "";
+
+  position: absolute;
   top: 18px;
   left: 18px;
 
@@ -195,6 +191,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-current::after {
+  content: "";
+
+  position: absolute;
   top: 53px;
   left: 25px;
   width: 100px;
@@ -245,6 +244,9 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs a::after {
+  content: "";
+
+  position: absolute;
   top: 6px;
   right: 0;
 
@@ -316,6 +318,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-checkbox + label::before {
+  content: "";
+
+  position: absolute;
   top: 5px;
   left: -50px;
 
@@ -326,6 +331,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
   top: 9px;
   left: -45px;
 
@@ -338,6 +346,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
   top: 5px;
   left: -50px;
 
@@ -353,6 +364,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
   top: 11px;
   left: -43px;
 
@@ -578,6 +592,9 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item h3::after {
+  content: "";
+
+  position: absolute;
   top: 50px;
   left: 80px;
 
@@ -725,6 +742,9 @@ input[type="radio"].visually-hidden {
 }
 
 .price caption::after {
+  content: "";
+
+  position: absolute;
   top: 65px;
   left: 20px;
 
@@ -838,6 +858,9 @@ input[type="radio"].visually-hidden {
 }
 
 .reviews h2::after {
+  content: "";
+
+  position: absolute;
   top: 40px;
   left: 0;
 
@@ -1179,6 +1202,9 @@ input[type="radio"].visually-hidden {
 
 .modal-close::before,
 .modal-close::after {
+  content: "";
+
+  position: absolute;
   top: 15px;
   left: -2px;
 
@@ -1278,6 +1304,9 @@ input[type="radio"].visually-hidden {
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
   top: 8px;
   left: 2px;
 
