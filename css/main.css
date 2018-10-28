@@ -44,15 +44,16 @@ body {
 }
 
 a {
+  color: #4169E1;
   text-decoration: none;
 
-  color: #4169E1;
   border-bottom: 1px dashed #4169E1;
 }
 
 a:hover,
 a:focus {
   color: #1f49c7;
+
   border-bottom: 1px dashed #1f49c7;
 }
 
@@ -185,6 +186,7 @@ input[type="radio"].visually-hidden {
   padding: 20px 20px;
 
   color: #fff;
+
   border-bottom: none;
 }
 
@@ -576,6 +578,7 @@ input[type="radio"].visually-hidden {
 .btn-find-more:hover,
 .btn-find-more:focus {
   color: #fff;
+
   background-color: #4191e1;
 }
 
@@ -766,6 +769,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-current {
   position: relative;
+
   border-bottom: 5px solid #000;
 }
 
@@ -775,8 +779,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 53px;
   left: 13px;
+
   width: 75px;
   height: 7px;
+
   text-align: center;
 
   background-color: #87ceeb;
@@ -1127,6 +1133,16 @@ input[type="radio"].visually-hidden {
 /* Page Contacts
 --------------------------------------------------------------------- */
 
+.page-contacts {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-contacts .container {
+  flex-grow: 1;
+}
+
 .page-contacts .site-navigation-current::after {
   left: 22px;
 }
@@ -1138,6 +1154,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 30px;
 }
 
 .iframe-img-wrapper {
@@ -1155,6 +1172,10 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 
   margin: 0;
+}
+
+.page-contacts .main-footer {
+  flex-shrink: 0;
 }
 
 /* Main Footer
@@ -1183,6 +1204,7 @@ input[type="radio"].visually-hidden {
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   color: #4191e1;
+
   border-bottom: 1px dashed #4191e1;
 }
 
@@ -1193,6 +1215,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   width: 145px;
+
   text-align: center;
 }
 
@@ -1212,6 +1235,7 @@ input[type="radio"].visually-hidden {
   width: 150px;
   margin: 0 auto;
   padding: 0;
+
   list-style: none;
 }
 
@@ -1250,6 +1274,7 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 
   color: #404040;
+
   background-color: #87ceeb;
 }
 
