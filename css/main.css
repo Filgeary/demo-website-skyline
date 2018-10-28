@@ -1653,3 +1653,11 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
 }
+
+/* For IE11
+---------------------------------------------------------------------
+
+body {
+  display: flex;   
+  flex-direction: column;
+} */
