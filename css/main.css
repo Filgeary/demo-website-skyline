@@ -945,7 +945,7 @@ input[type="radio"].visually-hidden {
   width: 13px;
   height: 13px;
 
-  background-image: url("/img/cross.svg");
+  background-image: url("img/cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
