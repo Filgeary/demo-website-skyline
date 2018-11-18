@@ -224,15 +224,17 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px 0;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .index-main-img {
+  display: block;
   width: 500px;
   height: 344px;
+  margin-right: 120px;
 }
 
 .main-intro-slogan {
@@ -275,6 +277,8 @@ input[type="radio"].visually-hidden {
 --------------------------------------------------------------------- */
 
 .features {
+  width: 940px;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
@@ -331,13 +335,13 @@ input[type="radio"].visually-hidden {
 --------------------------------------------------------------------- */
 
 .promo {
+  width: 940px;
+  margin: 0 auto;
+  padding: 20px 0;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 80px;
   margin-bottom: 60px;
 
   color: #87ceeb;
@@ -346,9 +350,12 @@ input[type="radio"].visually-hidden {
 }
 
 .promo svg {
+  display: block;
   width: 125px;
   height: 125px;
   margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 100px;
 }
 
 .promo p {
@@ -369,8 +376,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
   padding: 40px 80px;
   margin-bottom: 60px;
+  box-sizing: border-box;
 
   background-color: #eee;
 }
@@ -448,145 +458,17 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
 }
 
-/* Price
---------------------------------------------------------------------- */
-
-.price {
-  padding: 20px 0;
-  margin-bottom: 60px;
-}
-
-.price table {
-  display: table;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.price caption {
-  position: relative;
-  padding: 20px;
-  margin-bottom: 40px;
-
-  font-size: 34px;
-  text-align: left;
-  color: #405776;
-}
-
-.price caption::after {
-  content: "";
-
-  position: absolute;
-  top: 65px;
-  left: 20px;
-
-  width: 400px;
-  height: 4px;
-
-  background-color: #405776;
-}
-
-.price th {
-  padding: 20px;
-
-  font-size: 24px;
-  font-weight: 400;
-  color: #fff;
-}
-
-.plan-row .thead-plan-free {
-  background-color: #4191e1;
-}
-
-.plan-row .thead-plan-basic {
-  background-color: #4169e1;
-}
-
-.plan-row .thead-plan-pro {
-  color: #87ceeb;
-
-  background-color: #405776;
-}
-
-.price tr {
-  border-bottom: 1px dashed #4191e1;
-}
-
-.price td {
-  padding: 10px 20px;
-
-  text-align: center;
-
-  background-color: #eee;
-}
-
-.price td:first-child {
-  background-color: #fdfdfd;
-}
-
-.price tr:last-child {
-  border-bottom: none;
-}
-
-.price-row td {
-  padding: 20px;
-
-  font-size: 30px;
-  color: #fff;
-}
-
-.price-row .tfoot-plan-free {
-  background-color: #4191e1;
-}
-
-.price-row .tfoot-plan-basic {
-  background-color: #4169e1;
-}
-
-.price-row .tfoot-plan-pro {
-  color: #87ceeb;
-  
-  background-color: #405776;
-}
-
-.price-btn-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.btn-price {
-  padding: 15px 70px;
-  margin-top: 50px;
-
-  font-size: 20px;
-}
-
-.btn-price:hover,
-.btn-price:focus {
-  border-bottom: none;
-}
-
-.btn-find-more {
-  color: #4169e1;
-
-  background-color: #e6e6e6;
-}
-
-.btn-find-more:hover,
-.btn-find-more:focus {
-  color: #fff;
-
-  background-color: #4191e1;
-}
-
 /* Reviews
 --------------------------------------------------------------------- */
 
+.reviews {
+  width: 940px;
+  margin: 0 auto;        
+}
+
 .reviews h2 {
   position: relative;
+  
   margin-bottom: 50px;
 
   font-size: 30px;
@@ -758,8 +640,149 @@ input[type="radio"].visually-hidden {
   margin-top: 5px;
 }
 
+/* Price
+--------------------------------------------------------------------- */
+
+.price {
+  width: 940px;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+
+.price table {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.price caption {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 40px;
+
+  font-size: 34px;
+  text-align: left;
+  color: #405776;
+}
+
+.price caption::after {
+  content: "";
+
+  position: absolute;
+  top: 65px;
+  left: 20px;
+
+  width: 400px;
+  height: 4px;
+
+  background-color: #405776;
+}
+
+.price th {
+  padding: 20px;
+
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.plan-row .thead-plan-free {
+  background-color: #4191e1;
+}
+
+.plan-row .thead-plan-basic {
+  background-color: #4169e1;
+}
+
+.plan-row .thead-plan-pro {
+  color: #87ceeb;
+
+  background-color: #405776;
+}
+
+.price tr {
+  border-bottom: 1px dashed #4191e1;
+}
+
+.price td {
+  padding: 10px 20px;
+
+  text-align: center;
+
+  background-color: #eee;
+}
+
+.price td:first-child {
+  background-color: #fdfdfd;
+}
+
+.price tr:last-child {
+  border-bottom: none;
+}
+
+.price-row td {
+  padding: 20px;
+
+  font-size: 30px;
+  color: #fff;
+}
+
+.price-row .tfoot-plan-free {
+  background-color: #4191e1;
+}
+
+.price-row .tfoot-plan-basic {
+  background-color: #4169e1;
+}
+
+.price-row .tfoot-plan-pro {
+  color: #87ceeb;
+  
+  background-color: #405776;
+}
+
+.price-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-price {
+  padding: 15px 70px;
+  margin-top: 50px;
+
+  font-size: 20px;
+}
+
+.btn-price:hover,
+.btn-price:focus {
+  border-bottom: none;
+}
+
+.btn-find-more {
+  color: #4169e1;
+
+  background-color: #e6e6e6;
+}
+
+.btn-find-more:hover,
+.btn-find-more:focus {
+  color: #fff;
+
+  background-color: #4191e1;
+}
+
 /* Page Marketplace
 --------------------------------------------------------------------- */
+
+.marketplace-wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
 
 .inner-page-logo {
   margin-top: 8px;
@@ -857,6 +880,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-catalog-wrapper {
+  width: 940px;
+  margin: 0 auto;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1653,11 +1679,3 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
 }
-
-/* For IE11
---------------------------------------------------------------------- */
-
-/* body {
-  display: flex;   
-  flex-direction: column;
-} */
