@@ -2,7 +2,9 @@
 
 training project - Fixed Width website
 
-HTML, CSS, JavaScript, Flexbox, Git, GitHub, SVG, popup
+HTML, CSS, JavaScript, Git, GitHub
+
+Flexbox, SVG, popup
 
 images, icons from internet
 
