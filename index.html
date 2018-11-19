@@ -60,7 +60,7 @@
 
     <section class="promo">
       <h2 class="visually-hidden">Promo</h2>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#87ceeb">
+      <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 24 24" fill="#87ceeb">
         <path d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092zm-1.25 10.75l-1.859 2.07-1.891-2.07h1.25c0-2.071 1.68-3.75 3.75-3.75.997 0 1.903.393 2.574 1.028l-.835.93c-.45-.438-1.064-.708-1.739-.708-1.378 0-2.5 1.121-2.5 2.5h1.25zm4.359-2.07l-1.859 2.07h1.25c0 1.379-1.122 2.5-2.5 2.5-.676 0-1.289-.271-1.739-.708l-.835.93c.671.635 1.577 1.028 2.574 1.028 2.07 0 3.75-1.679 3.75-3.75h1.25l-1.891-2.07z" />
       </svg>
       <p>Build with powerful services and platforms, and the broadest machine learning framework support anywhere.<br>
@@ -159,15 +159,15 @@
         <p class="appointment-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
         <form class="appointment-form" action="#" method="post">
           <p class="appointment-item">
-            <label for="appointment-name" class="visually-hidden">Full Name</label>
+            <label for="appointment-name" aria-label="Full Name"></label>
             <input id="appointment-name" type="text" name="name" placeholder="Full Name">
           </p>
           <p class="appointment-item">
-            <label for="appointment-email" class="visually-hidden">Email</label>
+            <label for="appointment-email" aria-label="Email"></label>
             <input id="appointment-email" type="text" name="email" placeholder="Email">
           </p>
           <p class="appointment-item">
-            <label for="appointment-tel" class="visually-hidden">Phone Number</label>
+            <label for="appointment-tel" aria-label="Phone Number"></label>
             <input id="appointment-tel" type="tel" name="tel" placeholder="Phone Number">
           </p>
           <button class="button appointment-button" type="submit" name="button">Enroll</button>
@@ -260,11 +260,11 @@
     <p class="modal-description">Type your login and password, please</p>
     <form class="login-form" action="#" method="post">
       <p>
-        <label class="visually-hidden" for="user-login">Login</label>
+        <label for="user-login" aria-label="Login"></label>
         <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Login">
       </p>
       <p>
-        <label class="visually-hidden" for="user-password">Password</label>
+        <label for="user-password" aria-label="Password"></label>
         <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
       </p>
       <p class="login-help">

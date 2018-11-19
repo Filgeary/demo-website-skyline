@@ -132,6 +132,9 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   width: 940px;
   margin: 0 auto;
+}
+
+.main-navigation {
   padding: 0 10px;
 }
 
@@ -227,7 +230,6 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding: 0 10px;
 }
 
 .index-main-img {
@@ -238,8 +240,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-intro-slogan {
+  margin-top: 50px;
   margin-right: 20px;
-  padding-top: 50px;
 
   text-align: center;
   color: #505050;
@@ -250,6 +252,9 @@ input[type="radio"].visually-hidden {
 }
 
 .index-logo {
+  width: 300px;
+  height: 77px;
+
   background-color: #4169E1;
   -webkit-box-shadow: 0px 0px 5px 5px #4169E1;
           box-shadow: 0px 0px 5px 5px #4169E1;
@@ -615,7 +620,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: 10px;
 }
 
