@@ -1165,13 +1165,20 @@ input[type="radio"].visually-hidden {
 --------------------------------------------------------------------- */
 
 .page-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
 }
 
 .page-contacts .container {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .page-contacts .site-navigation-current::after {
@@ -1206,7 +1213,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-contacts .main-footer {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 /* Main Footer
