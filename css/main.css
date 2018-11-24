@@ -1212,11 +1212,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.page-contacts .main-footer {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
 /* Main Footer
 --------------------------------------------------------------------- */
 
