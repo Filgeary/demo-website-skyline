@@ -1,4 +1,4 @@
-# demo-website-1-skyline
+# demo-website-skyline
 
 Training Project - Fixed Width Website
 
